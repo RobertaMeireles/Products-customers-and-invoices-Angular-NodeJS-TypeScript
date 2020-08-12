@@ -1,0 +1,17 @@
+button{
+    margin: 15px 10px 0 0;
+}
+
+.position{
+    padding-top: 5rem;
+}
+
+.input-field select{
+    width: 100%;
+    padding: 0.5rem 3rem;
+}
+
+.submitProduct{
+    margin: 1rem 0;
+    width: 10rem;
+}

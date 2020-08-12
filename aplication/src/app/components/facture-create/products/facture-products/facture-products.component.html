@@ -1,0 +1,17 @@
+<div>
+    <form>
+    <!--Product-->
+        <mat-form-field appearance="fill">
+            <mat-label>Customer</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let item of products" [value]="item.designacao">
+                {{item.designacao}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>    
+        <!--Quantity-->
+            <mat-form-field>
+               <input matInput placeholder="Quantity"name="quantity">
+            </mat-form-field>
+    </form>
+</div>

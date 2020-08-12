@@ -1,0 +1,13 @@
+<div class="position">
+    <mat-toolbar class="header mat-elevation-z6">
+        <div class="logo-position">
+            <a routerLink="/home">
+               <img class="logo" src="assets/img/Logo.png" alt="logo">
+            </a>
+        </div>
+         <div *ngIf="shownav()" class="title-group">
+            <a routerLink="{{routUrl}}"><i class="material-icons v-middle home-icon"> {{icon}}</i>{{title}}</a>
+            <a class="logoff" routerLink="/" (click)="logOut()"><i class="material-icons v-middle">directions_run</i>Logoff</a>
+        </div>
+    </mat-toolbar>
+</div>

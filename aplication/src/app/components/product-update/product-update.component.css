@@ -1,0 +1,18 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    margin: 20px 15px 0px 0px;
+}
+
+.position{
+    padding-top: 5rem;
+}
+
+.input-field select{
+    width: 100%;
+    padding: 0.5rem 3rem;
+}
+

@@ -1,0 +1,50 @@
+.position {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+
+}
+    
+.header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+    
+.header .logo{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.header .title-group{
+    display: flex;
+    align-items: center;
+    
+}
+
+.header .title-group i{
+    padding-right: 5px;
+}
+
+.title-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-position {
+    position: relative;
+    left: 0;
+}
+
+.v-middle {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.2rem;
+}

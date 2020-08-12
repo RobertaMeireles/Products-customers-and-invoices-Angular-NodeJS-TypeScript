@@ -1,0 +1,28 @@
+<div class="position">
+    <mat-card>
+        <mat-card-title>Update Customer</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Name" [(ngModel)]="customer.nome" name="nome">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Age" [(ngModel)]="customer.idade" name="idade">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Adress" [(ngModel)]="customer.morada" name="morada">
+            </mat-form-field>
+            <div class="input-field col s12">
+                <select [(ngModel)]="customer.cod_postal" name="id_codigo_postal">
+                    <option value="">Zip Code</option>
+                    <option value="1500">Lisboa</option>
+                    <option value="2350">Torres Novas</option>
+                    <option value="4000">Porto</option>
+                    <option value="8500">Portimão</option>
+                </select>
+            </div>
+        </form>
+
+    <button mat-raised-button (click)="updateCustomer()" color="primary">Save</button>
+    <button mat-raised-button (click)="cancel()">Cancel</button>
+    </mat-card>
+</div>

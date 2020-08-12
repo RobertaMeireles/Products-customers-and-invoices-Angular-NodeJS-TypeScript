@@ -1,0 +1,12 @@
+table{
+    
+    width: 100%;
+}
+
+.info{
+    margin-right: 10px;
+}
+
+.info > i{
+    color:#d9cd26;
+}

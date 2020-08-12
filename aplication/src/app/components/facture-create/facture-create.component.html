@@ -1,0 +1,30 @@
+<div class="position">
+    <mat-card>
+        <mat-card-title>Register Invoices</mat-card-title>
+        <form>
+            <mat-form-field appearance="fill">
+                <mat-label>Customer</mat-label>
+                <mat-select [(ngModel)]="selectedUser" name="selectedUser"> 
+                    <mat-option #selectedUser *ngFor="let item of customers" [value]="item.nome">
+                    {{item.nome}} 
+                </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--Product-->
+            <mat-form-field appearance="fill">
+                <mat-label>Product</mat-label>
+                <mat-select [(ngModel)]="selectedProduct" name="selectedProduct">
+                    <mat-option *ngFor="let item of products" [value]="item.designacao">
+                        {{item.designacao}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>    
+            <!--Quantity-->
+            <mat-form-field>
+                <input matInput placeholder="Quantity"name="quantity" #selectedQuantity>
+            </mat-form-field>
+        </form>
+    <button mat-raised-button (click)="createInvoice(selectedQuantity)" color="primary">Save</button>
+    <button mat-raised-button (click)="cancel()">Cancel</button>
+</mat-card>
+</div>

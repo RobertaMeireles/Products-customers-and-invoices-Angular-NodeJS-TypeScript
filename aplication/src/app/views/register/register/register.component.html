@@ -1,0 +1,17 @@
+<div class="position">
+    <mat-card>
+        <mat-card-title>Login</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Name" [(ngModel)]="user.nome" name="nome">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Email"[(ngModel)]="user.email" name="email">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Password" [(ngModel)]="user.password" name="password">
+            </mat-form-field>
+        </form>
+    <button mat-raised-button (click)="createUser()" color="primary">Save</button>
+</mat-card>
+</div>

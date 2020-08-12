@@ -1,0 +1,17 @@
+button{
+    margin: 15px 10px 0 0;
+}
+
+/* .position{
+    padding-top: 0.1rem;
+} */
+
+.input-field select{
+    width: 100%;
+    padding: 0.5rem 3rem;
+    margin-top: 15px;
+}
+
+.mat-form-field{
+    margin-top: 15px;
+}

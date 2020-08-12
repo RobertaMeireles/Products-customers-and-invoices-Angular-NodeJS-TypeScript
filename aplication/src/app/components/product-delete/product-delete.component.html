@@ -1,0 +1,38 @@
+<div class="position">
+    <mat-card>
+        <mat-card-title>Product</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Designation" [value]="product.designacao" name="designacao" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Description" [value]="product.descricao" name="descricao"disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Price (€)" [value]="product.preco" name="preco"disabled>
+            </mat-form-field>
+            <div class="input-field col s12">
+                <select [(ngModel)]="product.id_categoria" name="id_categoria" disabled>
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Processors</option>
+                  <option value="2">Memories</option>
+                  <option value="3">Hard Drives</option>
+                  <option value="4">Boxes</option>
+                  <option value="5">Motherboards</option>   
+                  <option value="6">Monitor</option>
+                  <option value="7">Peripherals</option>
+                  <option value="8">Power Supplies</option>
+                  <option value="9">Drives</option>
+                  <option value="10">Graphics Cards</option>
+                  <option value="11">Sound Cards</option>
+                  <option value="12">NetWork</option>
+                  <option value="13">Notebook</option>
+                  <option value="14">Tablets</option>
+                  <option value="15">Smartphones</option>
+                </select>
+              </div>
+        </form>
+        <button mat-raised-button (click)="deleteProduct()" color="warn">Delete</button>
+        <button mat-raised-button (click)="cancel()">Cancel</button>
+    </mat-card>
+</div>

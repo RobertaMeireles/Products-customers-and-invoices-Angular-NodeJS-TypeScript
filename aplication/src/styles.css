@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; overflow: hidden;}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.red{
+    color: #e35e6b;
+}
+
+.v-middle{
+    vertical-align: middle;
+}
+
+/*Form*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.msg-success{
+    position: relative;
+    top:5rem;
+    background-color: #28a745;
+    color: #fff;
+
+}
+
+.msg-error{
+    position: relative;
+    top:5rem;
+    margin-top:5rem;
+    background-color: #e35e6b;
+    color: #fff;
+}

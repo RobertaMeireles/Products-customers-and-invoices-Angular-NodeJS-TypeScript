@@ -1,0 +1,16 @@
+<div class="position">
+<mat-card>
+    <mat-card-title>Login</mat-card-title>
+    <form (ngSubmit)="doLogin()">
+        <mat-form-field>
+            <input matInput name="email" #email id="login-acesso" value="" [(ngModel)]="loginData.email" placeholder="Email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="password-acesso" #password id="password-acesso" [(ngModel)]="loginData.password" placeholder="Password">
+        </mat-form-field>
+        <button mat-raised-button color="primary">Login</button>
+    </form>
+    <p class="message">Not registered? <a routerLink="/register">Create an account</a></p>
+    <span>{{ errorMessage }}</span>
+</mat-card>
+</div>

@@ -1,0 +1,16 @@
+<mat-sidenav-container class="container">
+
+    <mat-sidenav class="sidenav" mode="side" opened >
+        <mat-nav-list class="nav-list">
+            <a mat-list-item *ngIf="shownav()" routerLink="/home"><i class="material-icons"> home </i>Home</a>
+            <a mat-list-item *ngIf="shownav()" routerLink="/products"><i class="material-icons"> storefront </i>Store</a>
+            <a mat-list-item *ngIf="shownav()" routerLink="/customers"><i class="material-icons"> mood </i>Customers</a>
+            <a mat-list-item *ngIf="shownav()" routerLink="/invoices"><i class="material-icons"> local_grocery_store </i>Invoices</a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet> 
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
